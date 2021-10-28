@@ -1,0 +1,223 @@
+/* Website template by freewebsitetemplates.com */
+@font-face {
+	font-family: 'Muli';
+	src: url('../fonts/Muli-Regular.eot');
+	src: local('☺'),  url('../fonts/Muli-Regular.woff') format('woff'),  url('../fonts/Muli-Regular.ttf') format('truetype'),  url('../fonts/Muli-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Muli-Light';
+	src: url('../fonts/Muli-Light.eot');
+	src: local('☺'),  url('../fonts/Muli-Light.woff') format('woff'),  url('../fonts/Muli-Light.ttf') format('truetype'),  url('../fonts/Muli-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'NixieOne';
+	src: url('../fonts/NixieOne-Regular.eot');
+	src: local('☺'),  url('../fonts/NixieOne-Regular.woff') format('woff'),  url('../fonts/NixieOne-Regular.ttf') format('truetype'),  url('../fonts/NixieOne-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*-------------------------------------------------------------*/
+
+body {
+	background-color: #f6f6f6;
+	font-family: 'Muli';
+	margin: 0;
+	padding-bottom: 500px;
+}
+#page {
+	width: 1040px;
+	margin: 0 auto;
+	padding: 96px 0 0;
+}
+img {
+	border: 0;
+}
+
+/*-------------------------------------------------------------*/
+.collapsible {
+	background-color: #eee;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	font-family: "Muli";
+  }
+  
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+	background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible_content {
+	padding: 0 18px;
+	display: block;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+
+/*------------------------------ Tables -------------------------------*/
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+tr:nth-child(even) {
+	background-color: #ccc;
+}
+tr {
+	border-bottom: 1px solid #ccc;
+}
+/*------------------------------ Sprites ------------------------------*/
+#header span.shadow, #footer span.shadow, #sidebar li.selected > button, #sidebar li > button:hover {
+	background: url(../images/shadows.png) repeat-x;
+}
+.frame1, .frame2, .frame3 {
+	background: url(../images/frames.png) no-repeat;
+}
+.frame1 {
+	float: left;
+	background-position: 0 bottom;
+	height: 510px;
+	width: 444px;
+	margin: 0 50px 0 0;
+	padding: 18px 18px 32px 33px;
+	overflow: hidden;
+}
+.frame2 {
+	background-position: 0 -259px;
+	height: 379px;
+	width: 547px;
+	margin: 0 0 12px;
+	padding: 17px 40px 30px 18px;
+	overflow: hidden;
+}
+.frame3 {
+	background-position: 0 0;
+	height: 199px;
+	width: 286px;
+	margin: 0 0 12px;
+	padding: 8px 19px 15px 9px;
+	overflow: hidden;
+}
+/*------------------------------ HEADER ------------------------------*/
+#header {
+	background-color: #303030;
+	width: 100%;
+	text-align: right;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#header > div {
+	height: 96px;
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+#header span.shadow {
+	background-position: 0 -20px;
+	display: block;
+	height: 8px;
+	width: 100%;
+	position: absolute;
+	bottom: -8px;
+	z-index: 999;
+}
+/** Logo **/
+#logo {
+	float: left;
+	display: inline-block;
+	margin-top: 20px;
+}
+/*------------------------------ CONTENTS ------------------------------*/
+#contents > div {
+	display: inline-block;
+	width: 100%;
+	padding-top: 42px;
+}
+#contents > div.body {
+	width: 1010px;
+	padding-left: 10px;
+}
+#contents h2, #contents h3 {
+	color: #000;
+	font-family: 'NixieOne';
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 24px;
+	text-transform: uppercase;
+}
+#contents p {
+	color: #606060;
+	font-size: 13px;
+	line-height: 24px;
+	margin: 0;
+	padding: 0 0 24px;
+}
+#contents p a {
+	color: #606060;
+}
+#contents p a:hover {
+	color: #000;
+}
+/* Sidebar */
+#sidebar {
+	float: left;
+	background-position: 0 0;
+	background-repeat: repeat-y;
+	color: #606060;
+	width: 316px;
+}
+#sidebar h3 {
+	padding: 0 40px 0 20px;
+}
+#sidebar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0 0 12px;
+}
+#sidebar ul li {
+	display: inline-block;
+	width: 100%;
+	font-size: 13px;
+}
+#sidebar ul li > a {
+	color: #606060;
+	display: block;
+	font-size: 13px;
+	padding-left: 20px;
+	text-decoration: none;
+}
+#sidebar {
+	background: none;
+}
+#sidebar {
+ *padding-bottom: 1px; /** Needed for IE7 **/
+}
+#sidebar ul {
+	padding-bottom: 30px;
+}
+#sidebar ul li > button {
+	line-height: 43px;
+	width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+	text-decoration: none;
+	font-family: 'Muli';
+	font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+#sidebar ul li.selected > button, #sidebar ul li > button:hover {
+	background-position: 0 -42px;
+}
